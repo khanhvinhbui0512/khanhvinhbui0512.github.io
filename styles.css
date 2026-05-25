@@ -38,7 +38,7 @@ a {
 
 .page {
   display: grid;
-  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.55fr);
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
   gap: clamp(24px, 4vw, 56px);
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -50,8 +50,9 @@ a {
   top: 28px;
   align-self: start;
   display: grid;
+  align-content: start;
+  grid-auto-rows: max-content;
   gap: 8px;
-  min-height: calc(100vh - 80px);
   padding: clamp(24px, 3vw, 36px);
   background: var(--panel);
   border: 1px solid var(--line);
@@ -100,16 +101,16 @@ a {
 
 .contact-list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .contact-list a {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
   align-items: center;
-  min-height: 62px;
-  padding: 10px;
+  min-height: 50px;
+  padding: 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fbf7ee;
@@ -127,25 +128,25 @@ a {
 .contact-list strong {
   display: block;
   color: var(--ink);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .contact-list span:last-child {
   min-width: 0;
   overflow-wrap: anywhere;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
 }
 
 .contact-icon {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: #e5f3f1;
   color: var(--accent-dark);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 800;
 }
 
